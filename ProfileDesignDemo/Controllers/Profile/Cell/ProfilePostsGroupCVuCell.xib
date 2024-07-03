@@ -11,15 +11,15 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProfilePostsGroupCVuCell" customModule="ProfileDesignDemo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="418" height="407"/>
+            <rect key="frame" x="0.0" y="0.0" width="312" height="247"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="418" height="407"/>
+                <rect key="frame" x="0.0" y="0.0" width="312" height="247"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="x56-yw-eZr">
-                        <rect key="frame" x="0.0" y="0.0" width="418" height="407"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <rect key="frame" x="0.0" y="0.0" width="312" height="247"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="qWJ-oH-1xF">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -36,16 +36,16 @@
                 <constraint firstItem="x56-yw-eZr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ddS-zk-7bn"/>
                 <constraint firstItem="x56-yw-eZr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gKX-WP-fHe"/>
             </constraints>
-            <size key="customSize" width="418" height="407"/>
+            <size key="customSize" width="312" height="247"/>
             <connections>
                 <outlet property="groupCVu" destination="x56-yw-eZr" id="xgd-Ik-kxZ"/>
             </connections>
-            <point key="canvasLocation" x="410.68702290076334" y="145.42253521126761"/>
+            <point key="canvasLocation" x="329.7709923664122" y="55.281690140845072"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

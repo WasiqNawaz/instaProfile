@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091FB1E92C35180E003A979D /* Profile + Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FB1E82C35180E003A979D /* Profile + Delegate.swift */; };
 		097111B42C32AE7900695229 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097111B32C32AE7900695229 /* AppDelegate.swift */; };
 		097111B62C32AE7900695229 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097111B52C32AE7900695229 /* SceneDelegate.swift */; };
 		097111B82C32AE7900695229 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097111B72C32AE7900695229 /* ProfileVC.swift */; };
@@ -18,7 +19,6 @@
 		097112102C32B8B900695229 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097111FA2C32B8B900695229 /* Constant.swift */; };
 		097112112C32B8B900695229 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097111FB2C32B8B900695229 /* DesignableView.swift */; };
 		097112122C32B8B900695229 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097111FC2C32B8B900695229 /* Extension.swift */; };
-		097112142C32C06F00695229 /* Profile + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097112132C32C06F00695229 /* Profile + CollectionView.swift */; };
 		097112162C32C08500695229 /* Profile + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097112152C32C08500695229 /* Profile + TableView.swift */; };
 		0971121A2C32C62E00695229 /* ProfileInfoHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097112182C32C62E00695229 /* ProfileInfoHeaderCell.swift */; };
 		0971121B2C32C62E00695229 /* ProfileInfoHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097112192C32C62E00695229 /* ProfileInfoHeaderCell.xib */; };
@@ -52,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091FB1E82C35180E003A979D /* Profile + Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile + Delegate.swift"; sourceTree = "<group>"; };
 		097111B02C32AE7900695229 /* ProfileDesignDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfileDesignDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097111B32C32AE7900695229 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		097111B52C32AE7900695229 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		097111FA2C32B8B900695229 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		097111FB2C32B8B900695229 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		097111FC2C32B8B900695229 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		097112132C32C06F00695229 /* Profile + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile + CollectionView.swift"; sourceTree = "<group>"; };
 		097112152C32C08500695229 /* Profile + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile + TableView.swift"; sourceTree = "<group>"; };
 		097112182C32C62E00695229 /* ProfileInfoHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCell.swift; sourceTree = "<group>"; };
 		097112192C32C62E00695229 /* ProfileInfoHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInfoHeaderCell.xib; sourceTree = "<group>"; };
@@ -188,8 +188,8 @@
 			children = (
 				097112172C32C5F300695229 /* Cell */,
 				097111B72C32AE7900695229 /* ProfileVC.swift */,
+				091FB1E82C35180E003A979D /* Profile + Delegate.swift */,
 				097112152C32C08500695229 /* Profile + TableView.swift */,
-				097112132C32C06F00695229 /* Profile + CollectionView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -367,8 +367,8 @@
 				097112222C32CAB500695229 /* ProfilePostCVuCell.swift in Sources */,
 				097112122C32B8B900695229 /* Extension.swift in Sources */,
 				097112362C33C9CD00695229 /* ProfilePostsGroupTVuCell.swift in Sources */,
+				091FB1E92C35180E003A979D /* Profile + Delegate.swift in Sources */,
 				0971121E2C32C6B400695229 /* ProfileOptionHeaderCell.swift in Sources */,
-				097112142C32C06F00695229 /* Profile + CollectionView.swift in Sources */,
 				097112112C32B8B900695229 /* DesignableView.swift in Sources */,
 				097112322C33C99100695229 /* ProfilePostsGroupCVuCell.swift in Sources */,
 				0971121A2C32C62E00695229 /* ProfileInfoHeaderCell.swift in Sources */,

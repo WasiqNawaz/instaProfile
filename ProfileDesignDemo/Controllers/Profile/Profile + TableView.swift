@@ -34,13 +34,19 @@ extension ProfileVC{
 extension ProfileVC{
     func load_post_group_Cell(row:Int, indexPath:IndexPath)->UITableViewCell{
         let cell = self.tblVu.dequeueReusableCell(withIdentifier: "ProfilePostsGroupTVuCell", for: indexPath) as! ProfilePostsGroupTVuCell
+        cell.postGroupCVu.reloadData() // Ensure collection view is reloaded
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+           return UITableView.automaticDimension
+       }
 }
 
 extension ProfileVC{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let header = Bundle.main.loadNibNamed("ProfileOptionHeaderCell", owner: self, options: nil)?.first as! ProfileOptionHeaderCell
+        header.delegate = self
         return header
     }
     

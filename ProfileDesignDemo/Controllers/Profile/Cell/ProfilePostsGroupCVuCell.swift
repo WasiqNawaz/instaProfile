@@ -3,7 +3,7 @@
 
 class ProfilePostsGroupCVuCell: UICollectionViewCell {
     //MARK: - Variables
-    
+    var option = 0
     //MARK: - Arrays
     
     //MARK: - Outlets
@@ -14,24 +14,18 @@ class ProfilePostsGroupCVuCell: UICollectionViewCell {
         self.collectionVuSetup()
     }
 
-//    override func systemLayoutSizeFitting(_ targetSize: CGSize,
-//                                             withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority,
-//                                             verticalFittingPriority: UILayoutPriority) -> CGSize {
-//           // Make sure the contentView's width is correct
-//           contentView.frame = CGRect(origin: .zero, size: targetSize)
-//           // Force the contentView to layout its subviews
-//           contentView.layoutIfNeeded()
-//           
-//           // Calculate the size based on the content size of the outer collection view
-//           return CGSize(width: targetSize.width, height: groupCVu.contentSize.height)
-//       }
+    
 }
 
 
 
 extension ProfilePostsGroupCVuCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        if option == 1 {
+            return 7
+        }else{
+            return 15
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -43,7 +37,11 @@ extension ProfilePostsGroupCVuCell: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 3, height: collectionView.frame.width / 2)
+        if option == 1 {
+            return CGSize(width: collectionView.frame.width / 3, height: collectionView.frame.width / 2)
+        }else{
+            return CGSize(width: collectionView.frame.width / 3, height: collectionView.frame.width / 3)
+        }
     }
 }
 

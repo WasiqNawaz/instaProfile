@@ -3,7 +3,7 @@
 
 class ProfilePostsGroupTVuCell: UITableViewCell {
     //MARK: - Variables
-    
+    var option = 0
     //MARK: - Arrays
     
     //MARK: - Outlets
@@ -12,28 +12,11 @@ class ProfilePostsGroupTVuCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionVuSetup()
+    
     }
-//    override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
-//        self.contentView.frame = self.bounds
-//        self.layoutIfNeeded()
-//        return self.postGroupCVu.contentSize
-//    }
-//    override func systemLayoutSizeFitting(_ targetSize: CGSize,
-//                                             withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority,
-//                                             verticalFittingPriority: UILayoutPriority) -> CGSize {
-//           // Make sure the contentView's width is correct
-//           contentView.frame = CGRect(origin: .zero, size: targetSize)
-//           // Force the contentView to layout its subviews
-//           contentView.layoutIfNeeded()
-//           
-//           // Calculate the size based on the content size of the outer collection view
-//           return CGSize(width: targetSize.width, height: postGroupCVu.contentSize.height)
-//       }
+
 }
 
-
-/********** Developed by Drudots Technologies **********/
-/******** https://www.drudotstech.com **********/
 
 extension ProfilePostsGroupTVuCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,12 +27,8 @@ extension ProfilePostsGroupTVuCell: UICollectionViewDelegate, UICollectionViewDa
         return load_option_Cell(row: indexPath.row, indexPath: indexPath)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("tapped")
-    }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 500)
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
 }
 
@@ -58,6 +37,7 @@ extension ProfilePostsGroupTVuCell: UICollectionViewDelegate, UICollectionViewDa
 extension ProfilePostsGroupTVuCell {
     func load_option_Cell(row: Int, indexPath: IndexPath) -> UICollectionViewCell {
         let cell = postGroupCVu.dequeueReusableCell(withReuseIdentifier: "ProfilePostsGroupCVuCell", for: indexPath) as! ProfilePostsGroupCVuCell
+        cell.option = indexPath.row
         return cell
     }
 }
